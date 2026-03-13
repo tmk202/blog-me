@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Life Story | 3D Storytelling Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <canvas class="webgl"></canvas>
+        
+        <!-- UI Overlay -->
+        <div class="overlay">
+            <div class="story-content">
+                <header>
+                    <span class="subtitle">---</span>
+                    <h1 class="title">---</h1>
+                </header>
+                <div class="description-container">
+                    <p class="description">---</p>
+                </div>
+                <div class="navigation-hint">
+                    Scroll to explore
+                    <div class="mouse-icon"></div>
+                </div>
+            </div>
+
+            <nav class="side-nav">
+                <!-- Will be populated by JS -->
+            </nav>
+        </div>
+
+        <div class="loading-screen">
+            <div class="loader"></div>
+            <p>Loading Experience...</p>
+        </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
