@@ -1,86 +1,66 @@
 /**
  * Story Configuration
- * As a Senior Frontend Engineer, we keep data decoupled from logic.
- * You can easily add more parts here by following the schema.
+ * 4 Chapters: Day -> Crimson -> Frozen -> Cyber
  */
 
 export const STORY_CONFIG = {
     settings: {
         debug: false,
         scrollSpeed: 1,
-        transitionDuration: 2, // seconds
+        transitionDuration: 2.5,
     },
-    tropicalAssets: [
-        { texture: '/assets/1.png', pos: { x: -10, y: 2, z: -5 }, scale: 5, parallax: 1.5 },
-        { texture: '/assets/2.png', pos: { x: -5, y: -3, z: -2 }, scale: 4, parallax: 1.2 },
-        { texture: '/assets/1.png', pos: { x: 5, y: 4, z: -8 }, scale: 6, parallax: 0.8 },
-        { texture: '/assets/2.png', pos: { x: 12, y: -1, z: -4 }, scale: 5, parallax: 1.3 },
-        { texture: '/assets/1.png', pos: { x: 20, y: 1, z: -6 }, scale: 4, parallax: 1.1 },
-        { texture: '/assets/2.png', pos: { x: 30, y: -2, z: -3 }, scale: 7, parallax: 0.9 }
-    ],
+    tropicalAssets: [],
     parts: [
         {
-            id: 'childhood',
-            title: 'Khơi Nguồn',
-            subtitle: '1995 - 2005',
-            content: 'Nơi hạt mầm bắt đầu nảy nở trong sự tò mò vô hạn về thế giới xung quanh.',
+            id: 'day',
+            title: 'Hành Trình của Huyền dê',
+            subtitle: 'THE SPARK OF CREATION',
+            content: 'Bắt đầu cuộc hành trình dưới ánh mặt trời rực rỡ, nơi mọi ý tưởng nảy mầm từ những hạt cát nhỏ nhất.',
             theme: {
-                backgroundColor: '#ffffff',
-                primaryColor: '#2d5a27',
+                backgroundColor: '#ffe0b2', // Warm morning sky
+                primaryColor: '#ef6c00',    
                 secondaryColor: '#1a1a1a',
-                fogColor: '#ffffff'
-            },
-            scene: {
-                cameraPos: { x: 0, y: 0, z: 12 },
-                progress: 0 // Progress value for this part
+                groundColor: '#ffffff', // Neutral tint
+                celestial: { type: 'sun', color: '#ffb703', pos: { x: -15, y: 4, z: -60 }, scale: 8.5 }
             }
         },
         {
-            id: 'discovery',
-            title: 'Khám Phá',
-            subtitle: '2005 - 2015',
-            content: 'Kỷ nguyên của những dòng code đầu tiên và khát khao chinh phục kiến thức.',
+            id: 'crimson',
+            title: 'Thung Lũng Rực Lửa',
+            subtitle: 'THE HEAT OF CHALLENGE',
+            content: 'Dưới cái nắng gắt của thực tế, chỉ những ai bền bỉ nhất mới thấy được vẻ đẹp của sự nỗ lực vượt bậc.',
             theme: {
-                backgroundColor: '#ffffff',
-                primaryColor: '#8eb021',
-                secondaryColor: '#1a1a1a',
-                fogColor: '#ffffff'
-            },
-            scene: {
-                cameraPos: { x: 0, y: 0, z: 12 },
-                progress: 0.25
+                backgroundColor: '#bf360c', // Deep Crimson
+                primaryColor: '#ff9e80',    
+                secondaryColor: '#ffffff',
+                groundColor: '#ffab91', // Reddish tint
+                celestial: { type: 'sun', color: '#d84315', pos: { x: -15, y: 8, z: -60 }, scale: 12.0 }
             }
         },
         {
-            id: 'challenges',
-            title: 'Thử Thách',
-            subtitle: '2015 - 2023',
-            content: 'Đối mặt với những dự án lớn, những đêm trắng và sự trưởng thành trong tư duy.',
+            id: 'frozen',
+            title: 'Đêm Băng Giá',
+            subtitle: 'THE CALM REFLECTION',
+            content: 'Sự tĩnh lặng tuyệt đối. Đây là lúc những ý tưởng vĩ đại nhất xuất hiện dưới bầu trời sao bao la.',
             theme: {
-                backgroundColor: '#ffffff',
-                primaryColor: '#d2b48c',
-                secondaryColor: '#1a1a1a',
-                fogColor: '#ffffff'
-            },
-            scene: {
-                cameraPos: { x: 0, y: 0, z: 12 },
-                progress: 0.5
+                backgroundColor: '#001219', // Deep Arctic Navy
+                primaryColor: '#90e0ef',    
+                secondaryColor: '#ffffff',
+                groundColor: '#caf0f8', // Frozen tint
+                celestial: { type: 'moon', color: '#e0f7fa', pos: { x: -10, y: 6, z: -60 }, scale: 6.0 }
             }
         },
         {
-            id: 'vision',
-            title: 'Tầm Nhìn',
-            subtitle: '2024 & Beyond',
-            content: 'Kiến tạo tương lai với AI và những công nghệ thay đổi thế giới.',
+            id: 'cyber',
+            title: 'Hành Trình của Huyền xinh',
+            subtitle: 'THE PIXEL HORIZON',
+            content: 'Dưới bầu trời sao vô tận, ta nhận ra rằng đích đến không phải là điểm dừng, mà là khởi đầu cho những tầm nhìn mới.',
             theme: {
-                backgroundColor: '#ffffff',
-                primaryColor: '#008080',
-                secondaryColor: '#1a1a1a',
-                fogColor: '#ffffff'
-            },
-            scene: {
-                cameraPos: { x: 0, y: 0, z: 12 },
-                progress: 0.75
+                backgroundColor: '#4a148c', // Cyber Purple
+                primaryColor: '#ea80fc',    
+                secondaryColor: '#ffffff',
+                groundColor: '#e1bee7', // Purple tint
+                celestial: { type: 'moon', color: '#f3e5f5', pos: { x: -10, y: 10, z: -60 }, scale: 4.5 }
             }
         }
     ]
